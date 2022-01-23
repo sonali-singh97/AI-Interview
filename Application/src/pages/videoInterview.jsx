@@ -5,8 +5,8 @@ import Footer from "../components/footer.component";
 const VideoInterview = () => {
   const [playing, setPlaying] = useState(false);
 
-  const HEIGHT = 600;
-  const WIDTH = 1200;
+  const HEIGHT = 440;
+  const WIDTH = 600;
 
   const startVideo = () => {
     setPlaying(true);
@@ -58,8 +58,8 @@ const VideoInterview = () => {
                 ) : (
                   <button className="border-2  px-5 text-blue py-2 border-black fs-2 font-medium rounded-2" onClick={startVideo}>Start</button>
                 )} */}
-                  <form action="http://192.168.0.107:5000/video_1" method="post">
-                    <input type="submit" name="video_1" value="Start Recording" />
+                  <form action="/video_1" method="post">
+                    <input type="submit" name="video" value="Start Recording" className="border-2  px-3 text-blue  border-black fs-4 font-medium rounded-2" />
                   </form>
 
               </div>
