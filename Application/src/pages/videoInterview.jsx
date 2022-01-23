@@ -53,22 +53,18 @@ const VideoInterview = () => {
                 ></video>
               </div>
               <div className="app__input ">
-                {playing ? (
+                {/* {playing ? (
                   <button className="border-2  px-5 text-blue py-2 border-black fs-2 font-medium rounded-2" onClick={stopVideo}>Stop</button>
                 ) : (
                   <button className="border-2  px-5 text-blue py-2 border-black fs-2 font-medium rounded-2" onClick={startVideo}>Start</button>
-                )}
+                )} */}
+                  <form action="http://127.0.0.1:5000/video_1" method="post">
+                    <input type="submit" name="video_1" value="Start Recording" />
+                  </form>
+
               </div>
             </div>
 
-            {/* <div className="d-flex m-4 justify-evenly	">
-              <button className="border-2 m-4 text-white bg-blue-900 px-8 py-2 border-blue fs-2 font-medium rounded-2">
-                Start
-              </button>
-              <button className="border-2 m-4 px-5 text-blue py-2 border-black fs-2 font-medium rounded-2">
-                Stop
-              </button> */}
-            {/* </div> */}
           </div>
 
         <div className="d-flex flex-column gap-4 ml-12 text-xl font-regular"style={{marginTop:"45px" , height:"100%"}}>
